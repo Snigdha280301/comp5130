@@ -20,7 +20,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
   // Delete Task Handler
   const deleteTask = async (id) => {
     try {
-      const { data } = await axios.delete(`https://task-manager-backend-e5yu.onrender.com/api/v1/task/delete/${id}`, {
+      const { data } = await axios.delete(`http://localhost:4000/api/v1/task/delete/${id}`, {
         withCredentials: true,
       });
       toast.success(data.message);

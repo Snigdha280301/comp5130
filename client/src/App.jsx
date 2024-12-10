@@ -26,7 +26,7 @@ const App = () => {
     const handleGetUser = async () => {
       try {
         const { data } = await axios.get(
-          "https://task-manager-backend-e5yu.onrender.com/api/v1/user/self",
+          "http://localhost:4000/api/v1/user/self",
           { withCredentials: true }
         );
         setIsAuthenticated(true);

@@ -29,7 +29,7 @@ const Register = ({ isAuthenticated, setIsAuthenticated }) => {
     formData.append("password", password);
     formData.append("avatar", avatar);
     await axios
-      .post("https://task-manager-backend-e5yu.onrender.com/api/v1/user/register", formData, {
+      .post("http://localhost:4000/api/v1/user/register", formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       })
