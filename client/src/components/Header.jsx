@@ -21,7 +21,7 @@ function Header({
   const fetchTasks = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/task/mytask",
+        "https://task-manager-backend-e5yu.onrender.com/api/v1/task/mytask",
         { withCredentials: true }
       );
       setAllTasks(response.data.tasks);
@@ -34,7 +34,7 @@ function Header({
   const handleLogout = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/user/logout",
+        "https://task-manager-backend-e5yu.onrender.com/api/v1/user/logout",
         { withCredentials: "true" }
       );
       toast.success(data.message);
