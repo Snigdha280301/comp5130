@@ -1,0 +1,197 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+body {
+  background-color: #f0f8ff; /* Replace with your desired color */
+  margin: 0; /* Ensure no margin around the body */
+  font-family: Arial, sans-serif; /* Optional: Add a default font */
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Ensures text wraps and fits within the modal */
+.modal-content-box {
+  max-height: 300px; /* Set a max height for the description box */
+  overflow-y: auto; /* Add vertical scrolling if content exceeds max height */
+  word-wrap: break-word; /* Break long words */
+  word-break: break-word; /* Break long words in older browsers */
+  white-space: pre-wrap; /* Preserve line breaks and spaces */
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure text is readable */
+.modal-content-text {
+  font-size: 1rem; /* Adjust text size */
+  line-height: 1.5; /* Improve readability */
+  color: #333; /* Darker text color */
+}
+
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #ffe6e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Styles */
+.login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form h3 {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.login-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-form .form-control:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25);
+}
+
+/* Submit Button Styles */
+.login-submit-btn {
+  background-color: #f59e0b;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.login-submit-btn:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Link Styles */
+.register-link {
+  color: #f59e0b;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #d97706;
+  text-decoration: underline;
+}
+
+/* Register.css */
+
+/* Container Styles */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 20px;
+}
+
+/* Form Styles */
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-form h3 {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.register-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button Styles */
+.register-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Link Styles */
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
