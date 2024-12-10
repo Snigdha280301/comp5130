@@ -8,7 +8,7 @@ import { Link, Navigate } from "react-router-dom";
 import "../App.css"; // Import the custom CSS
 
 
-function Login({ isAuthenticated, setIsAuthenticated }) {
+const Login = ({ isAuthenticated, setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
