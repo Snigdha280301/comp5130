@@ -24,7 +24,7 @@ export default defineConfig({
       '/api': {
         target: 'https://localhost:4000', 
         changeOrigin: true,
-        secure: false, // Ignore self-signed SSL certificates
+        secure: false, 
       },
     },
   },
